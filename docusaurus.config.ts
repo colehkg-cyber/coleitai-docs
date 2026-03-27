@@ -23,6 +23,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
+          editUrl: 'https://github.com/colehkg-cyber/coleitai-docs/edit/main/',
         },
         blog: false,
         theme: {
