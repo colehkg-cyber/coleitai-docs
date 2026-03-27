@@ -5,6 +5,22 @@ const sidebars: SidebarsConfig = {
     'intro',
     {
       type: 'category',
+      label: '🧠 기초편: 제품개발 A to Z',
+      collapsed: false,
+      items: [
+        'foundation/why-you-need-this',
+        'foundation/product-development',
+        'foundation/what-is-api',
+        'foundation/node-and-web',
+        'foundation/prd-writing',
+        'foundation/dogfooding-qa',
+        'foundation/growth-hacking',
+        'foundation/marketing-sales-bd',
+        'foundation/cross-functional',
+      ],
+    },
+    {
+      type: 'category',
       label: '📖 개념 이해하기',
       collapsed: false,
       items: [
