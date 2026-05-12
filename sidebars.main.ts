@@ -5,14 +5,19 @@ const sidebars: SidebarsConfig = {
     'intro',
     {
       type: 'category',
-      label: '📖 개념 이해하기',
+      label: '📖 SEO 개념 이해하기',
       collapsed: false,
       items: [
         'concepts/why-google-landlord',
+        'concepts/why-google-landlord-2',
         'concepts/seo-basics',
+        'concepts/seo-basics-2',
         'concepts/technical-seo',
+        'concepts/technical-seo-2',
         'concepts/content-seo',
+        'concepts/content-seo-2',
         'concepts/lighthouse-400',
+        'concepts/lighthouse-400-2',
       ],
     },
     {
