@@ -2,10 +2,10 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
   docs: [
-    'intro',
+    'foundation-intro',
     {
       type: 'category',
-      label: '🧠 기초편: 제품개발 A to Z',
+      label: '🧠 제품 개발 101',
       collapsed: false,
       items: [
         'foundation/why-you-need-this',

@@ -3,13 +3,13 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: '기초편: 제품개발 A to Z',
-  tagline: '실리콘밸리 PM/PO 관점에서 제품개발의 기본기를 다집니다',
+  title: '제품 개발 101',
+  tagline: '실리콘밸리 PM이 알려주는 제품 개발의 모든 것',
   favicon: 'img/favicon.ico',
   url: 'https://foundation.coleitai.com',
   baseUrl: '/',
   organizationName: 'coleitai',
-  projectName: 'google-landlord-foundation',
+  projectName: 'product-development-101',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
@@ -24,7 +24,7 @@ const config: Config = {
           sidebarPath: './sidebars.foundation.ts',
           routeBasePath: '/',
           editUrl: 'https://github.com/colehkg-cyber/coleitai-docs/edit/main/',
-          include: ['intro.md', 'foundation/**/*.{md,mdx}'],
+          include: ['foundation-intro.md', 'foundation/**/*.{md,mdx}'],
         },
         blog: false,
         theme: {
@@ -40,13 +40,13 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: '기초편 DOCS',
+      title: '제품 개발 101',
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'docs',
           position: 'left',
-          label: '📖 기초편',
+          label: '📖 커리큘럼',
         },
       ],
     },

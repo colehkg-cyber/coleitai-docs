@@ -24,6 +24,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
           editUrl: 'https://github.com/colehkg-cyber/coleitai-docs/edit/main/',
+          exclude: ['foundation-intro.md'],
         },
         blog: false,
         theme: {
