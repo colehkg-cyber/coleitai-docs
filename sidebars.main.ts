@@ -16,7 +16,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: '🎓 15분 강의 코스 (1강~10강)',
+      label: '🛠️ 블로그 제작 실습',
       collapsed: false,
       items: [
         'lessons/intro',

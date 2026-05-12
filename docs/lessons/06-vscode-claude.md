@@ -4,7 +4,6 @@ sidebar_position: 6
 
 # 6강. VS Code + Claude Code 설치
 
-> **소요 시간**: 15분
 > **결과물**: 내 컴퓨터에서 Claude Code 실행 준비 완료
 
 ---
@@ -17,7 +16,7 @@ sidebar_position: 6
 
 ---
 
-## 1. VS Code 설치 (없으면, 3분)
+## 1. VS Code 설치 (없으면)
 
 https://code.visualstudio.com → Download → 설치 → 실행
 
@@ -27,7 +26,7 @@ VS Code 실행 후 위쪽 메뉴에 `File / Edit / View ...` 보이면 OK.
 
 ---
 
-## 2. 코드 내 컴퓨터로 가져오기 (3분)
+## 2. 코드 내 컴퓨터로 가져오기
 
 VS Code 실행 → 위쪽 **Terminal 메뉴 → New Terminal** → 아래 명령어 한 줄씩:
 
@@ -47,7 +46,7 @@ code .
 
 ---
 
-## 3. Claude Code 설치 (5분)
+## 3. Claude Code 설치
 
 VS Code 내장 터미널 열기:
 - **Mac**: `Cmd + 백틱(\`)`
@@ -82,7 +81,7 @@ claude --version
 
 ---
 
-## 4. Claude Code 실행 + 로그인 (4분)
+## 4. Claude Code 실행 + 로그인
 
 ```bash
 claude
@@ -114,5 +113,5 @@ Claude가 한국어로 대답하면 성공.
 ---
 
 :::info 다음 강의
-**[7강. 블로그 정보·디자인 커스텀 →](./07-customize.md)** — 블로그 이름·색상을 내 것으로 바꿉니다 (15분).
+**[7강. 블로그 정보·디자인 커스텀 →](./07-customize.md)** — 블로그 이름·색상을 내 것으로 바꿉니다.
 :::

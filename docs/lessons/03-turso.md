@@ -4,7 +4,6 @@ sidebar_position: 3
 
 # 3강. Turso DB 만들기 + 토큰 받기
 
-> **소요 시간**: 10분
 > **결과물**: 블로그 글이 저장될 DB 주소 + 토큰
 
 ---
@@ -16,14 +15,14 @@ sidebar_position: 3
 
 ---
 
-## Step 1. 가입 (1분)
+## Step 1. 가입
 
 1. https://app.turso.tech 접속
 2. **"Sign in with GitHub"** 클릭 → Authorize
 
 ---
 
-## Step 2. DB 만들기 (3분)
+## Step 2. DB 만들기
 
 1. **"Create Database"** 버튼 클릭
 2. 입력값:
@@ -34,7 +33,7 @@ sidebar_position: 3
 
 ---
 
-## Step 3. DB 주소 복사 (1분)
+## Step 3. DB 주소 복사
 
 1. 방금 만든 DB 이름 클릭 → 상세 페이지 열림
 2. 상단에 **"Database URL"** 표시됨
@@ -44,7 +43,7 @@ sidebar_position: 3
 
 ---
 
-## Step 4. 토큰 발급 (5분) ⭐ 가장 중요
+## Step 4. 토큰 발급 ⭐ 가장 중요
 
 1. 같은 페이지에서 **"Generate Token"** 클릭
 2. 설정값:
@@ -74,5 +73,5 @@ sidebar_position: 3
 ---
 
 :::info 다음 강의
-**[4강. Gemini API + Claude Pro →](./04-gemini-claude.md)** — AI 키 발급 + Claude 구독 (10분).
+**[4강. Gemini API + Claude Pro →](./04-gemini-claude.md)** — AI 키 발급 + Claude 구독.
 :::

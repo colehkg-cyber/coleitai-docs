@@ -4,7 +4,6 @@ sidebar_position: 5
 
 # 5강. 템플릿 복사
 
-> **소요 시간**: 5분
 > **결과물**: 내 GitHub에 블로그 코드 통째로 복사됨
 
 ---
@@ -54,5 +53,5 @@ Vercel 무료 플랜은 Public이 가장 편합니다. 코드는 누가 봐도 �
 ---
 
 :::info 다음 강의
-**[6강. VS Code + Claude Code 설치 →](./06-vscode-claude.md)** — 내 컴퓨터에 AI 코딩 환경을 만듭니다 (15분).
+**[6강. VS Code + Claude Code 설치 →](./06-vscode-claude.md)** — 내 컴퓨터에 AI 코딩 환경을 만듭니다.
 :::

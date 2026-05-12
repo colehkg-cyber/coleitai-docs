@@ -4,12 +4,11 @@ sidebar_position: 4
 
 # 4강. Gemini API + Claude Pro
 
-> **소요 시간**: 10분
 > **결과물**: Gemini 키 + Claude Pro 구독 (마지막 계정!)
 
 ---
 
-## Step 1. Gemini API 키 받기 (5분)
+## Step 1. Gemini API 키 받기
 
 ### Gemini가 뭐예요?
 구글이 만든 AI. 블로그 글을 자동으로 써줍니다. **카드 등록 없이 무료.**
@@ -25,7 +24,7 @@ sidebar_position: 4
 
 ---
 
-## Step 2. Claude Pro 구독 (5분, 유료 $20/월)
+## Step 2. Claude Pro 구독 (유료 $20/월)
 
 ### Claude가 뭐예요?
 ChatGPT 경쟁사의 AI. **Claude Code**(터미널 코딩 도구)를 쓰려면 Pro 구독이 필수.
@@ -65,5 +64,5 @@ ChatGPT 경쟁사의 AI. **Claude Code**(터미널 코딩 도구)를 쓰려면 P
 ---
 
 :::info 다음 강의
-**[5강. 템플릿 복사 →](./05-template-copy.md)** — 완성된 블로그 코드를 내 GitHub으로 복사합니다 (5분).
+**[5강. 템플릿 복사 →](./05-template-copy.md)** — 완성된 블로그 코드를 내 GitHub으로 복사합니다.
 :::

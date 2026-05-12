@@ -4,12 +4,11 @@ sidebar_position: 2
 
 # 2강. GitHub + Vercel 가입
 
-> **소요 시간**: 10분
 > **결과물**: GitHub 계정 + Vercel 계정 (GitHub과 연동)
 
 ---
 
-## Step 1. GitHub 계정 만들기 (5분)
+## Step 1. GitHub 계정 만들기
 
 1. https://github.com/signup 접속
 2. 이메일 → 비밀번호 → **사용자 이름** 입력
@@ -21,7 +20,7 @@ sidebar_position: 2
 
 ---
 
-## Step 2. Vercel 가입 (3분)
+## Step 2. Vercel 가입
 
 1. https://vercel.com/signup 접속
 2. **"Continue with GitHub"** 클릭 ← 반드시 이거
@@ -46,5 +45,5 @@ sidebar_position: 2
 ---
 
 :::info 다음 강의
-**[3강. Turso DB 만들기 + 토큰 받기 →](./03-turso.md)** — 블로그 글을 저장할 데이터베이스를 준비합니다 (10분).
+**[3강. Turso DB 만들기 + 토큰 받기 →](./03-turso.md)** — 블로그 글을 저장할 데이터베이스를 준비합니다.
 :::
