@@ -20,6 +20,7 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         'guides/setup',
+        'guides/claude-code-workshop',
         'guides/template-deploy',
         'guides/design-custom',
         'guides/technical-seo-apply',
