@@ -16,8 +16,26 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: '🔨 실전 가이드',
+      label: '🎓 15분 강의 코스 (1강~10강)',
       collapsed: false,
+      items: [
+        'lessons/intro',
+        'lessons/01-tools-overview',
+        'lessons/02-github-vercel',
+        'lessons/03-turso',
+        'lessons/04-gemini-claude',
+        'lessons/05-template-copy',
+        'lessons/06-vscode-claude',
+        'lessons/07-customize',
+        'lessons/08-env',
+        'lessons/09-vercel-deploy',
+        'lessons/10-auto-deploy',
+      ],
+    },
+    {
+      type: 'category',
+      label: '🔨 실전 가이드',
+      collapsed: true,
       items: [
         'guides/setup',
         'guides/claude-code-workshop',
