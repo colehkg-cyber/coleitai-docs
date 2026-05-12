@@ -9,6 +9,7 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         'concepts/why-google-landlord',
+        'concepts/seo-basics',
         'concepts/technical-seo',
         'concepts/lighthouse-400',
         'concepts/content-seo',
