@@ -11,8 +11,8 @@ const sidebars: SidebarsConfig = {
         'concepts/why-google-landlord',
         'concepts/seo-basics',
         'concepts/technical-seo',
-        'concepts/lighthouse-400',
         'concepts/content-seo',
+        'concepts/lighthouse-400',
       ],
     },
     {

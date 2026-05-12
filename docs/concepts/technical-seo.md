@@ -412,6 +412,6 @@ Sitemap: https://myblog.com/sitemap.xml
 ---
 
 :::info
-**다음:** 구체적으로 Lighthouse 400점이 뭔지,\
-[Lighthouse 400점 해부](lighthouse-400.md)에서 낱낱이 파헤칩니다.
+**다음:** 기초 공사(테크니컬) 위에 올릴 인테리어,\
+[콘텐츠 SEO 이해하기](content-seo.md)로 넘어갑니다.
 :::

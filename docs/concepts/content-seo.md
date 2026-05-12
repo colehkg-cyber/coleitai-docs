@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 # 콘텐츠 SEO 이해하기
@@ -470,6 +470,6 @@ H2: 맥북 에어 M3 발열은 정상인가요?
 ---
 
 :::info
-**다음:** 개념은 끝났습니다! 이제 실전으로 넘어갑니다.\
-[블로그 제작 실습 시작하기](../lessons/intro.md)에서 직접 손을 움직여봅시다!
+**다음:** 구체적으로 Lighthouse 400점이 뭔지,\
+[Lighthouse 400점 해부](lighthouse-400.md)에서 낱낱이 파헤칩니다.
 :::

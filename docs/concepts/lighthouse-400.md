@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Lighthouse 400점 해부
@@ -427,8 +427,8 @@ PageSpeed Insights 결과를 받으면 어떻게 봐야 하나?
 ---
 
 :::info
-**다음:** 기초 공사(테크니컬 SEO) 위에 올릴 인테리어,\
-[콘텐츠 SEO 이해하기](content-seo.md)로 넘어갑니다.
+**다음:** 개념은 끝났습니다! 이제 실전으로 넘어갑니다.\
+[블로그 제작 실습 시작하기](../lessons/intro.md)에서 직접 손을 움직여봅시다!
 :::
 
 :::tip 공식 자료 원본
