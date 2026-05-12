@@ -45,25 +45,6 @@ title: 🏗️ 구글 건물주 프로젝트
 
 ## 한눈에 보는 로드맵
 
-### 🧠 기초편: 제품개발 A to Z (0~8강)
-
-> 실리콘밸리 PM/PO 관점에서 제품개발의 기본기를 다집니다.\
-> **AI 교육 서비스 200만 사용자, 글로벌 AI 교육 서비스 3개월 70만 사용자**를 만든 방법론.
-
-| 강의 | 주제 | 핵심 |
-|------|------|------|
-| **0강** | [왜 이걸 알아야 하는가](foundation/why-you-need-this) | 콘텐츠 = 제품 마인드셋 |
-| **1강** | [제품개발의 세계관](foundation/product-development) | PM/PO, 애자일, MVP, PMF |
-| **2강** | [API란 무엇인가](foundation/what-is-api) | 소프트웨어 간 대화 방식 |
-| **3강** | [노드 & 웹의 작동 원리](foundation/node-and-web) | SSG가 빠른 이유, Lighthouse 400 |
-| **4강** | [PRD 작성법](foundation/prd-writing) | 아이디어→문서→실행 |
-| **5강** | [개밥먹기 & QA](foundation/dogfooding-qa) | 직접 써봐야 진짜가 보인다 |
-| **6강** | [그로스 해킹](foundation/growth-hacking) | AARRR, 바이럴, A/B 테스트 |
-| **7강** | [마케팅 × 세일즈 × BD](foundation/marketing-sales-bd) | CAC, LTV, TOFU/MOFU/BOFU |
-| **8강** | [크로스펑셔널 리더십](foundation/cross-functional) | T자형 인재, 1인 빌더 |
-
----
-
 ### 🏗️ 본편: 구글 건물주 실전 (1~8강)
 
 ```
