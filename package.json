@@ -6,6 +6,8 @@
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
+    "build:foundation": "docusaurus build --config docusaurus.config.foundation.ts",
+    "build:main": "docusaurus build --config docusaurus.config.main.ts",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
