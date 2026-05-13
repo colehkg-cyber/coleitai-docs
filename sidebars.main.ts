@@ -33,7 +33,6 @@ const sidebars: SidebarsConfig = {
         'tools/turso',
         'tools/gemini',
         'tools/vscode',
-        'tools/decap',
       ],
     },
     {
@@ -44,7 +43,7 @@ const sidebars: SidebarsConfig = {
         'guides/setup',
         'guides/template-deploy',
         'guides/design-custom',
-        'guides/cms-publish',
+        'guides/admin-panel',
         'guides/technical-seo-apply',
         'guides/keyword-mining',
         'guides/ai-writing',

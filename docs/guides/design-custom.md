@@ -186,6 +186,6 @@ npm run dev
 ---
 
 :::info
-**다음:** [Step 4. Decap CMS로 글 발행 사이클](cms-publish.md)에서\
-워드프레스처럼 `/admin` 페이지에서 글을 작성하고 발행하는 방법을 익힙니다.
+**다음:** [Step 4. 관리자 패널 익히기](admin-panel.md)에서\
+블로그 템플릿에 내장된 `/admin` 관리자 패널의 8개 메뉴 사용법을 익힙니다.
 :::

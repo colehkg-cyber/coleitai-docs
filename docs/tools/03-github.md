@@ -334,7 +334,7 @@ PAT는:
 **GitHub은 모든 것의 중심**입니다.
 - 코드의 **유일한 진실의 원천** (Single Source of Truth)
 - Vercel은 GitHub만 봅니다
-- 내가 글을 쓰는 Decap CMS도 GitHub에 저장합니다
+- 블로그 글 본문은 Turso DB에 저장 (GitHub에는 코드만)
 
 ---
 
