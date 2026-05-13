@@ -24,7 +24,7 @@ const config: Config = {
           sidebarPath: './sidebars.main.ts',
           routeBasePath: '/',
           editUrl: 'https://github.com/colehkg-cyber/coleitai-docs/edit/main/',
-          include: ['intro.md', 'concepts/**/*.{md,mdx}', 'lessons/**/*.{md,mdx}', 'guides/**/*.{md,mdx}', 'reference/**/*.{md,mdx}', 'appendix/**/*.{md,mdx}'],
+          include: ['intro.md', 'concepts/**/*.{md,mdx}', 'tools/**/*.{md,mdx}', 'guides/**/*.{md,mdx}', 'reference/**/*.{md,mdx}', 'appendix/**/*.{md,mdx}'],
         },
         blog: false,
         theme: {
