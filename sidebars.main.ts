@@ -27,6 +27,8 @@ const sidebars: SidebarsConfig = {
       items: [
         'tools/intro',
         'tools/tools-overview',
+        'tools/claude',
+        'tools/github',
         'tools/github-vercel',
         'tools/turso',
         'tools/gemini-claude',
