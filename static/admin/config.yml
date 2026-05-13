@@ -1,0 +1,107 @@
+# Decap CMS 설정 파일
+# 변경 후 git push → Vercel 재배포 → /admin 페이지에 반영됩니다.
+
+backend:
+  name: github
+  repo: colehkg-cyber/coleitai-docs
+  branch: main
+  # Netlify 에 OAuth 만 빌려 씁니다. (호스팅은 Vercel 그대로)
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+# 이미지 업로드 위치
+media_folder: "static/img/uploads"
+public_folder: "/img/uploads"
+
+# 에디터에서 미리보기 URL (배포된 사이트)
+site_url: https://coleitai-main.vercel.app
+display_url: https://coleitai-main.vercel.app
+
+# 한국어 UI
+locale: "ko"
+
+# 발행 워크플로 (Draft / Review / Publish)
+publish_mode: simple
+
+# 편집 가능한 컬렉션 (= 문서 묶음)
+collections:
+  # 1. 강의 (블로그 제작 실습)
+  - name: "lessons"
+    label: "🛠️ 블로그 제작 실습"
+    label_singular: "강의"
+    folder: "docs/lessons"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "사이드바 순서", name: "sidebar_position", widget: "number", required: false }
+      - { label: "제목", name: "title", widget: "string", required: false }
+      - { label: "본문", name: "body", widget: "markdown" }
+
+  # 2. SEO 개념 이해하기
+  - name: "concepts"
+    label: "📖 SEO 개념 이해하기"
+    label_singular: "개념 문서"
+    folder: "docs/concepts"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "사이드바 순서", name: "sidebar_position", widget: "number", required: false }
+      - { label: "제목", name: "title", widget: "string", required: false }
+      - { label: "본문", name: "body", widget: "markdown" }
+
+  # 3. 실전 가이드
+  - name: "guides"
+    label: "🔨 실전 가이드"
+    label_singular: "가이드"
+    folder: "docs/guides"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "사이드바 순서", name: "sidebar_position", widget: "number", required: false }
+      - { label: "제목", name: "title", widget: "string", required: false }
+      - { label: "본문", name: "body", widget: "markdown" }
+
+  # 4. 레퍼런스
+  - name: "reference"
+    label: "📎 레퍼런스"
+    label_singular: "레퍼런스"
+    folder: "docs/reference"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "사이드바 순서", name: "sidebar_position", widget: "number", required: false }
+      - { label: "제목", name: "title", widget: "string", required: false }
+      - { label: "본문", name: "body", widget: "markdown" }
+
+  # 5. 부록
+  - name: "appendix"
+    label: "🧰 부록"
+    label_singular: "부록"
+    folder: "docs/appendix"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "사이드바 순서", name: "sidebar_position", widget: "number", required: false }
+      - { label: "제목", name: "title", widget: "string", required: false }
+      - { label: "본문", name: "body", widget: "markdown" }
+
+  # 6. 홈/소개 (단일 파일)
+  - name: "single-pages"
+    label: "📄 단일 페이지"
+    files:
+      - label: "메인 소개 (intro.md)"
+        name: "intro"
+        file: "docs/intro.md"
+        fields:
+          - { label: "사이드바 순서", name: "sidebar_position", widget: "number", required: false }
+          - { label: "본문", name: "body", widget: "markdown" }
