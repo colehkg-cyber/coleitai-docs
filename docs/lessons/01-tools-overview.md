@@ -23,8 +23,7 @@ sidebar_position: 1
 :::tip 돈 드는 건 Claude Pro 딱 하나
 나머지 4개는 평생 무료로 써도 충분합니다.
 
-![](/img/uploads/1000092821.png)
-
+![123](/img/uploads/img_3743.jpg "123")
 
 :::
 
