@@ -34,6 +34,8 @@ collections:
     slug: "{{slug}}"
     extension: "md"
     format: "frontmatter"
+    # 목록에 표시될 텍스트 (title 필드가 비어있어도 파일명이 보이도록)
+    summary: "{{filename}}"
     fields:
       - { label: "사이드바 순서", name: "sidebar_position", widget: "number", required: false }
       - { label: "제목", name: "title", widget: "string", required: false }
@@ -48,6 +50,7 @@ collections:
     slug: "{{slug}}"
     extension: "md"
     format: "frontmatter"
+    summary: "{{filename}}"
     fields:
       - { label: "사이드바 순서", name: "sidebar_position", widget: "number", required: false }
       - { label: "제목", name: "title", widget: "string", required: false }
@@ -62,6 +65,7 @@ collections:
     slug: "{{slug}}"
     extension: "md"
     format: "frontmatter"
+    summary: "{{filename}}"
     fields:
       - { label: "사이드바 순서", name: "sidebar_position", widget: "number", required: false }
       - { label: "제목", name: "title", widget: "string", required: false }
@@ -76,6 +80,7 @@ collections:
     slug: "{{slug}}"
     extension: "md"
     format: "frontmatter"
+    summary: "{{filename}}"
     fields:
       - { label: "사이드바 순서", name: "sidebar_position", widget: "number", required: false }
       - { label: "제목", name: "title", widget: "string", required: false }
@@ -90,6 +95,7 @@ collections:
     slug: "{{slug}}"
     extension: "md"
     format: "frontmatter"
+    summary: "{{filename}}"
     fields:
       - { label: "사이드바 순서", name: "sidebar_position", widget: "number", required: false }
       - { label: "제목", name: "title", widget: "string", required: false }
