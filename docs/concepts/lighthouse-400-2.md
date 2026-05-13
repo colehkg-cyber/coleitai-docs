@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 12
 ---
 
 # Lighthouse 400점 해부 (2) — 접근성·SEO·실전 측정

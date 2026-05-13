@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 11
 ---
 
 # Lighthouse 400점 해부 (1) — 개요와 Performance

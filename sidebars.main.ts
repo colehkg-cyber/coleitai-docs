@@ -16,6 +16,8 @@ const sidebars: SidebarsConfig = {
         'concepts/technical-seo-2',
         'concepts/content-seo',
         'concepts/content-seo-2',
+        'concepts/seo-advanced',
+        'concepts/seo-advanced-2',
         'concepts/lighthouse-400',
         'concepts/lighthouse-400-2',
       ],
