@@ -1,8 +1,8 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 ---
 
-# Step 7. 수익화 & 확장
+# Step 8. 수익화 & 확장
 
 > 잠자는 동안 통장에 돈이 꽂히는 시스템을 켜고, 더 크게 키웁니다.
 

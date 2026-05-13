@@ -1,8 +1,8 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 ---
 
-# Step 6. AI 글쓰기 실전
+# Step 7. AI 글쓰기 실전
 
 > AI가 초안을 쓰고, 내가 경험을 얹고, 구글이 띄워줍니다.
 
@@ -26,7 +26,7 @@ sidebar_position: 6
 ## AI 글쓰기 전체 과정
 
 ```
-1. 황금 키워드 선정 (Step 5에서 완료) ✅
+1. 황금 키워드 선정 (Step 6에서 완료) ✅
        ↓
 2. AI에게 글 구조 요청 ← 프롬프트 복사-붙여넣기
        ↓
@@ -227,6 +227,6 @@ git push
 
 :::info
 **다음:** 글이 올라갔으면 이제 **돈을 벌 차례!**\
-[Step 7. 수익화 & 확장](monetization.md)에서\
+[Step 8. 수익화 & 확장](monetization.md)에서\
 애드센스 승인, 제휴 마케팅, 사이트 확장 전략까지 모두 다룹니다.
 :::

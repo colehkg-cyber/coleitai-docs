@@ -4,215 +4,246 @@ sidebar_position: 2
 
 # Step 2. 템플릿 설치 & 배포
 
-> 한 줄 명령어로 블로그 생성. 10분 만에 내 사이트가 인터넷에 올라갑니다!
+> **이 단계에서 할 일**
+> Step 1에서 준비한 도구들을 연결해서, 실제 블로그를 인터넷에 띄웁니다.
+> 끝나면 `https://my-blog.vercel.app` 같은 주소로 내 블로그 공개됨.
 
 ---
 
-## 뭘 하는 건가요?
+## 작업 흐름
 
-**블로그 밀키트(템플릿)**를 설치하고, 인터넷에 공개하는 단계입니다.
-
-요리할 때 밀키트 써보셨죠?\
-재료가 다 손질되어 있어서, 불만 켜면 요리가 완성되잖아요.
-
-우리 템플릿도 마찬가지입니다.\
-**Lighthouse 400점, SEO 자동 세팅, 반응형 디자인, 다크모드** — 전부 들어있어요.\
-여러분은 설치하고, 글만 쓰면 됩니다.
-
----
-
-## 템플릿에 뭐가 들어있나요?
-
-| 기능 | 상태 | 쉬운 설명 |
-|------|------|----------|
-| SEO 구조 | ✅ 자동 | 구글이 좋아하는 구조가 미리 만들어져 있어요 |
-| Lighthouse 400점 | ✅ 자동 | 설치만 하면 400점 나옵니다 |
-| 반응형 디자인 | ✅ 자동 | 컴퓨터, 태블릿, 스마트폰에서 다 예쁘게 보여요 |
-| 다크모드 | ✅ 자동 | 밝은 모드/어두운 모드 전환 가능 |
-| 이미지 최적화 | ✅ 자동 | 이미지를 가벼운 형식으로 자동 변환 |
-| 사이트맵 | ✅ 자동 | 구글에 "나 여기 있어요" 알려주는 지도 자동 생성 |
-| 메타 태그 | ✅ 자동 | 구글 검색 결과에 보이는 제목/설명 자동 생성 |
-
-> 💡 전부 자동이에요. **코드를 건드릴 일이 없습니다.**
-
----
-
-## 설치하기
-
-### Step 1: 터미널 열기
-
-"터미널"은 컴퓨터에게 글자로 명령을 내리는 프로그램입니다.\
-무서워하지 마세요! 우리가 하는 건 **복사-붙여넣기** 뿐이에요.
-
-| 운영체제 | 터미널 여는 방법 |
-|---------|----------------|
-| **Mac** | 키보드에서 `Cmd + Space` → "터미널" 입력 → Enter |
-| **Windows** | 키보드에서 `Win + R` → "cmd" 입력 → Enter |
-
-> 💡 터미널이 처음이라 무섭다고요?\
-> 걱정 마세요. 딱 몇 줄만 복사-붙여넣기 하면 됩니다.\
-> 앞으로도 복잡한 명령어를 외울 일은 없습니다.
-
-### Step 2: 템플릿 설치
-
-터미널에 아래 명령어를 **그대로 복사해서 붙여넣기** 하세요:
-
-```bash
-npx create-google-landlord-blog my-blog
+```
+1. GitHub에서 템플릿 복사 (Use this template)
+2. 내 컴퓨터로 다운로드 (git clone)
+3. Turso DB 생성 + 토큰 발급
+4. Vercel 프로젝트 연결
+5. 환경변수 5개 입력
+6. Deploy 클릭
+7. DB 초기화
+8. 자동배포 동작 확인
 ```
 
-그리고 Enter를 누릅니다.
+총 작업: 약 20~30분.
 
-> 💡 `my-blog` 부분은 원하는 이름으로 바꿔도 됩니다.\
-> 예: `npx create-google-landlord-blog tech-blog`\
-> 하지만 **영어**로, **띄어쓰기 없이** 써야 합니다.
+---
 
-설치하는 데 1~2분 정도 걸립니다. 기다려주세요!
+## 1. GitHub에서 템플릿 복사
 
-:::warning ⚠️ 에러가 나요!
-**"node is not recognized"** 또는 **"npx: command not found"** 에러가 뜬다면:\
-Node.js라는 프로그램이 설치되어 있지 않아서 그렇습니다.
+브라우저에서 접속:
+```
+https://github.com/colehkg-cyber/coleitai-blog
+```
 
-1. [nodejs.org](https://nodejs.org)에 접속합니다
-2. **LTS** 버전을 다운로드합니다 (왼쪽 초록 버튼)
-3. 설치합니다 (다음-다음-완료 누르면 됩니다)
-4. **터미널을 껐다가 다시 엽니다** (이게 중요!)
-5. 위 명령어를 다시 입력합니다
+1. 초록색 **"Use this template"** 버튼 클릭
+2. **"Create a new repository"** 선택
+3. Repository name: `my-blog` (원하는 이름)
+4. ⭐ **Public** 선택 (Vercel 무료 배포 조건)
+5. **"Create repository"** 클릭
 
-대부분 이것만 하면 해결됩니다!
-:::
+이제 내 GitHub에 블로그 코드 사본이 생겼습니다.
 
-### Step 3: 내 컴퓨터에서 확인하기
+---
 
-설치가 끝나면, 아래 두 줄을 입력합니다:
+## 2. 내 컴퓨터로 다운로드
+
+VS Code → 터미널 (`` Ctrl + ` ``) → 아래 명령:
 
 ```bash
+git clone https://github.com/내GitHub아이디/my-blog.git
 cd my-blog
-npm run dev
 ```
 
-첫 번째 줄은 "my-blog 폴더로 이동해"라는 뜻이고,\
-두 번째 줄은 "사이트를 실행해"라는 뜻입니다.
+> ⚠️ `내GitHub아이디` 부분을 실제 아이디로 바꾸세요.
 
-그다음 인터넷 브라우저(크롬 등)에서 아래 주소로 들어갑니다:
+VS Code에서 폴더 열기: `File → Open Folder → my-blog`
 
-```
-http://localhost:3000
-```
-
-**🎉 내 블로그가 보이면 성공!**
-
-> ⚠️ 아직 인터넷에 공개된 건 아니에요.\
-> 지금은 **내 컴퓨터에서만** 보입니다.\
-> 다른 사람이 보려면 "배포"를 해야 합니다. 바로 아래에서 합니다!
-
----
-
-## 인터넷에 공개하기 (배포)
-
-### Step 1: Github에 코드 올리기
-
-Github (금고)에 코드를 올려야 Vercel (관리인)이 가져갈 수 있습니다.
-
-터미널에 아래를 **한 줄씩** 복사-붙여넣기 합니다:
+### 내 컴퓨터에서 미리 보기 (선택)
 
 ```bash
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/[내아이디]/my-blog.git
-git push -u origin main
+npm install     # 부품 다운로드 (1~2분)
+npm run dev     # 로컬 서버 실행
 ```
 
-> ⚠️ `[내아이디]` 부분을 **본인의 Github 아이디**로 바꿔야 합니다!\
-> 예: `https://github.com/john123/my-blog.git`
+브라우저에서 `http://localhost:3000` 접속 → 블로그 화면이 보이면 성공.
 
-:::info 💡 Git 명령어가 어렵다면
-이 6줄이 끝입니다. 외울 필요 없어요.\
-다음부터는 이걸 다시 칠 일이 거의 없습니다.
-
-그래도 어렵다면, 두 가지 대안이 있습니다:
-1. **Github Desktop** 앱 설치 → 마우스 클릭으로 가능
-2. Claude에게 **"깃허브에 올리는 법 알려줘"** 물어보기
-:::
-
-### Step 2: Vercel에서 배포하기
-
-1. [vercel.com](https://vercel.com)에 로그인합니다
-2. **"Add New Project"** 버튼을 클릭합니다
-3. **"Import Git Repository"**에서 방금 올린 `my-blog`를 선택합니다
-4. **"Deploy"** 버튼을 클릭합니다
-5. 1~2분 기다립니다...
-
-**🎉 "Congratulations!" 라고 뜨면 성공!**
-
-### Step 3: 내 사이트 확인하기
-
-Vercel이 주소를 줍니다:
-
-```
-https://my-blog.vercel.app
-```
-
-이 주소를 브라우저에 입력하면 — **내 블로그가 전 세계에 공개되었습니다!** 🌍
-
-- 서버비: **₩0**
-- HTTPS 보안: **자동 적용**
-- 전 세계 어디서든 접속 가능
-
-> 💡 이 주소를 카톡이나 메모장에 저장해두세요!\
-> 앞으로 자주 들어가게 됩니다.
+> 💡 이 단계는 건너뛰어도 됩니다. Vercel에 바로 배포해도 작동.
 
 ---
 
-## 배포 후 Lighthouse 측정해보기
+## 3. Turso DB 생성 + 토큰 발급
 
-진짜 400점이 나오는지 확인해봅시다!
+[`turso.tech`](https://turso.tech) 로그인 → **Dashboard**
 
-1. [pagespeed.web.dev](https://pagespeed.web.dev)에 접속합니다
-2. 방금 받은 **내 사이트 주소**를 입력합니다
-3. "분석" 버튼을 누릅니다
-4. 30초~1분 기다리면 점수가 나옵니다
+### DB 만들기
+1. **"Create Database"** 클릭
+2. Database name: `my-blog` (자유)
+3. Region: 가장 가까운 곳 (한국이면 `Tokyo`)
+4. **Create** 클릭
 
-**설치만 했는데 400점 근처가 나올 겁니다!** 🎉\
-코드를 한 줄도 안 건드렸는데요.
+### URL 복사
+- DB 클릭 → 화면에 `libsql://my-blog-내아이디.turso.io` 형태 URL
+- 📋 메모장에 복사
+
+### 토큰 발급
+1. DB 화면에서 **"Generate Token"** 클릭
+2. Expiration: **Never** (선택)
+3. Permission: **Read & Write**
+4. **"Create"** 클릭
+5. `eyJ...` 로 시작하는 긴 문자열 → 📋 메모장에 복사
+
+> ⚠️ 토큰은 한 번만 표시됨. 꼭 복사.
 
 ---
 
-## 앞으로의 흐름 — 한 번 세팅이면 끝!
+## 4. Vercel 프로젝트 연결
+
+[`vercel.com/dashboard`](https://vercel.com/dashboard) → **Add New → Project**
+
+1. **"Import Git Repository"** 섹션
+2. 내 GitHub 레포 목록에서 `my-blog` 찾기
+3. **"Import"** 클릭
+
+### 프로젝트 설정 (기본값 OK)
+- Framework Preset: **Next.js** (자동 감지)
+- Build Command: 그대로
+- Output Directory: 그대로
+
+---
+
+## 5. 환경변수 5개 입력
+
+같은 화면 아래쪽 **"Environment Variables"** 섹션 펼치기.
+
+| Name | Value | 어디서 |
+|---|---|---|
+| `NEXT_PUBLIC_SITE_URL` | `https://my-blog.vercel.app` | Vercel 기본 주소 (배포 후 확인) |
+| `TURSO_DATABASE_URL` | `libsql://my-blog-내아이디.turso.io` | 3번에서 복사 |
+| `DATABASE_AUTH_TOKEN` | `eyJ...` | 3번에서 복사 |
+| `GEMINI_API_KEY` | `AIza...` | Step 1-4번에서 복사 |
+| `ADMIN_PASSWORD` | `MyBlog2026!` (내가 정함) | 자유 |
+
+각 항목마다 **Add** 클릭.
+
+> 💡 `NEXT_PUBLIC_SITE_URL`은 처음엔 임시값으로 두고, 배포 후 실제 Vercel 주소로 업데이트해도 됨.
+
+---
+
+## 6. Deploy 클릭
+
+**"Deploy"** 버튼 클릭 → 2~3분 기다림.
+
+### 빌드 진행 상황
+```
+Building...   (1~2분, Next.js 빌드)
+Deploying... (30초, CDN 배포)
+Ready ✓     (완료)
+```
+
+**"Congratulations!" 페이지가 뜨면 성공.**
+
+배포 주소 확인:
+```
+https://my-blog-xxxx.vercel.app
+```
+
+---
+
+## 7. DB 초기화 (첫 배포 후 1회)
+
+블로그 코드는 Turso DB에 테이블을 만들어야 글을 저장할 수 있습니다. 초기화 페이지 접속:
 
 ```
-┌──────────┐     ┌──────────┐     ┌──────────┐
-│    나     │     │  GitHub  │     │  Vercel  │
-│ 글을 쓴다  │ ──→ │ 코드 저장  │ ──→ │ 자동 배포  │
-└──────────┘     └──────────┘     └──────────┘
-
-              글 쓰고 저장하면 → 자동으로 사이트 업데이트!
-              비용: ₩0
+https://my-blog-xxxx.vercel.app/admin/setup
 ```
 
-> 💡 앞으로는 이 과정을 반복할 필요 없습니다.\
-> 글만 쓰고 Github에 올리면, Vercel이 **알아서** 사이트를 업데이트해줍니다.
+1. ADMIN_PASSWORD로 로그인
+2. **"Initialize Database"** 클릭
+3. "Success" 메시지 → 완료
+
+> 💡 이 작업은 **첫 배포 후 한 번만** 합니다.
+
+---
+
+## 8. 자동배포 동작 확인
+
+코드를 수정하면 GitHub → Vercel이 자동으로 다시 배포되는지 확인해 봅시다.
+
+### 간단한 테스트
+VS Code 터미널에서 Claude Code 실행:
+```bash
+claude
+```
+
+Claude Code 안에서:
+```
+README.md 파일 맨 아래에 "테스트 배포" 라고 한 줄 추가하고
+git에 커밋·푸시해줘.
+```
+
+Claude가 자동으로 처리. 그 후:
+
+1. 브라우저에서 `vercel.com/dashboard` → 내 프로젝트
+2. **"Deployments"** 탭
+3. 새 배포가 **"Building"** 상태로 자동 시작됨
+4. 1~2분 후 **"Ready"** 로 변경
+
+> 🎉 이제부터는 코드 수정 → git push → 자동 배포. 끝!
+
+---
+
+## 흐름 요약
+
+```
+   내 컴퓨터 (VS Code + Claude Code)
+            ↓ git push
+       ┌──────────┐
+       │  GitHub  │
+       └────┬─────┘
+            ↓ 자동 감지
+       ┌──────────┐
+       │  Vercel  │ ─── 빌드 → CDN 배포
+       └────┬─────┘
+            ↓ 실행 중 호출
+   ┌──────┴──────┬──────────┐
+   ▼             ▼          ▼
+ Turso         Gemini    Decap CMS
+ (글 DB)       (AI)      (글쓰기)
+```
+
+---
+
+## 자주 묻는 질문
+
+**Q. Vercel 빌드 실패! "Module not found" 에러.**
+- `npm install`이 안 됐을 가능성. Vercel은 자동으로 처리하니, GitHub에 코드가 제대로 올라갔는지 확인.
+
+**Q. "Environment variable XXX is missing" 에러.**
+- 5개 환경변수 모두 입력했는지 확인. 오타도 점검.
+
+**Q. `/admin/setup` 페이지가 404.**
+- 배포가 완료된 후에 접속. Deployments에서 **Ready** 상태인지 확인.
+
+**Q. ADMIN_PASSWORD 잊어버림.**
+- Vercel 환경변수 → 수정 → Redeploy.
+
+**Q. 비공개(Private) 레포로 만들고 싶음.**
+- Vercel Pro($20/월) 필요. 입문자는 Public 추천.
 
 ---
 
 ## ✅ 체크리스트
 
-- [ ] 템플릿 설치 완료 (`npx create-google-landlord-blog`)
-- [ ] 내 컴퓨터에서 사이트 확인 (`localhost:3000`)
-- [ ] Github에 코드 업로드 완료
-- [ ] Vercel 배포 완료
-- [ ] 내 사이트 URL로 접속 확인
-- [ ] Lighthouse 점수 측정 완료
-
-> 🎉 여기까지 오셨으면, **여러분의 건물이 인터넷에 올라간 겁니다!**\
-> 아직 비어있는 건물이지만, 이제부터 채워나갈 거예요.
+- [ ] GitHub에서 템플릿 복사 (Use this template)
+- [ ] 내 컴퓨터로 git clone
+- [ ] Turso DB 생성·토큰 발급
+- [ ] Vercel에 프로젝트 Import
+- [ ] 환경변수 5개 모두 입력
+- [ ] Deploy 성공 (Ready 표시)
+- [ ] `/admin/setup` 으로 DB 초기화
+- [ ] git push로 자동배포 동작 확인
 
 ---
 
-:::info
-**다음:** [Step 3. 디자인 커스텀](design-custom.md)에서\
-AI한테 "색깔 바꿔줘", "로고 넣어줘" 시켜서 예쁘게 꾸밉니다.\
-코드는 AI가 짜줍니다. 여러분은 말만 하면 돼요!
+:::info 다음 단계
+**[Step 3. 디자인 커스텀 →](./design-custom.md)** — Claude Code에게 한국어로 "색깔 바꿔줘" 같이 말해서 블로그 외관을 내 것으로 만듭니다.
 :::

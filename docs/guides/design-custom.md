@@ -186,7 +186,6 @@ npm run dev
 ---
 
 :::info
-**다음:** [Step 4. 테크니컬 SEO 적용](technical-seo-apply.md)에서\
-구글에 "내 사이트 여기 있어요!" 알려주는 작업을 합니다.\
-이것까지 하면 **기초 공사 완료!**
+**다음:** [Step 4. Decap CMS로 글 발행 사이클](cms-publish.md)에서\
+워드프레스처럼 `/admin` 페이지에서 글을 작성하고 발행하는 방법을 익힙니다.
 :::

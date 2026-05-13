@@ -42,9 +42,9 @@ const sidebars: SidebarsConfig = {
       collapsed: true,
       items: [
         'guides/setup',
-        'guides/claude-code-workshop',
         'guides/template-deploy',
         'guides/design-custom',
+        'guides/cms-publish',
         'guides/technical-seo-apply',
         'guides/keyword-mining',
         'guides/ai-writing',
