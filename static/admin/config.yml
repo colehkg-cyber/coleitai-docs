@@ -5,9 +5,9 @@ backend:
   name: github
   repo: colehkg-cyber/coleitai-docs
   branch: main
-  # Netlify 에 OAuth 만 빌려 씁니다. (호스팅은 Vercel 그대로)
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
+  # Vercel 서버리스 함수 (api/auth, api/callback) 가 OAuth 처리
+  base_url: https://coleitai-main.vercel.app
+  auth_endpoint: api/auth
 
 # 이미지 업로드 위치
 media_folder: "static/img/uploads"
