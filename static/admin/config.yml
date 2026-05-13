@@ -25,11 +25,11 @@ publish_mode: simple
 
 # 편집 가능한 컬렉션 (= 문서 묶음)
 collections:
-  # 1. 강의 (블로그 제작 실습)
+  # 1. 도구 알아보기
   - name: "lessons"
-    label: "🛠️ 블로그 제작 실습"
-    label_singular: "강의"
-    folder: "docs/lessons"
+    label: "🛠️ 도구 알아보기"
+    label_singular: "도구 챕터"
+    folder: "docs/tools"
     create: true
     slug: "{{slug}}"
     extension: "md"
@@ -56,9 +56,9 @@ collections:
       - { label: "제목", name: "title", widget: "string", required: false }
       - { label: "본문", name: "body", widget: "markdown" }
 
-  # 3. 실전 가이드
+  # 3. 실전 블로그 제작
   - name: "guides"
-    label: "🔨 실전 가이드"
+    label: "🚀 실전 블로그 제작"
     label_singular: "가이드"
     folder: "docs/guides"
     create: true
