@@ -175,6 +175,7 @@ Gemini가 시스템 지침 + 지식 파일 기반으로 글 작성
 |---|---|---|
 | Favicon | 브라우저 탭 아이콘 | 작은 로고 이미지 업로드 |
 | Unsplash Access Key | AI가 글 썸네일 자동 선택 시 사용 | unsplash.com 무료 발급 |
+| 기본 OG 이미지 | Unsplash 실패 시 대체 이미지 | `default-og.png` (1200×630) |
 | Meta Description | 구글 검색 결과에 노출되는 한 줄 설명 | "강남 카페 추천 블로그" |
 
 ### Unsplash Access Key 발급 (선택)
@@ -183,6 +184,31 @@ Gemini가 시스템 지침 + 지식 파일 기반으로 글 작성
 3. Access Key 복사 → 이 화면에 붙여넣기 → 저장
 
 이후 글 작성 시 키워드 기반으로 적절한 무료 이미지 자동 선택.
+
+### 썸네일 → OG 이미지 자동 흐름
+1. Unsplash에서 키워드 매칭 이미지 1장 가져오기
+2. **자동 1200×630 리사이징** (Vercel Image Optimization)
+3. `<meta property="og:image">` 자동 삽입 → 카톡·페북·트위터 공유 시 미리보기 정상 노출
+
+### Fallback (대체) 이미지 — 필수 준비
+다음 경우에 사이트 기본 이미지 `default-og.png`가 자동 사용됩니다:
+- Unsplash Access Key 미발급
+- 무료 할당량(시간당 50회) 초과
+- 키워드에 매칭되는 이미지 없음
+- 네트워크 오류
+
+#### 기본 이미지 준비 방법
+1. [Canva](https://canva.com) → 사용자 지정 사이즈 → **1200 × 630 px**
+2. 사이트 로고 + 슬로건 한 줄 디자인 (5분)
+3. PNG 또는 JPG로 다운로드 (1MB 이내)
+4. 파일명을 `default-og.png` 로 저장
+5. Claude Code에 다음 한 줄:
+   ```
+   default-og.png 파일을 public 폴더에 추가하고
+   OG 이미지 fallback 로직이 이 파일을 가리키도록 해줘.
+   ```
+
+> ⚠️ 이 fallback 이미지를 준비 안 하면, Unsplash 호출이 실패한 글은 **카톡/페북 공유 시 미리보기 이미지가 빈 칸**으로 보입니다. 클릭률 30~40% 손실.
 
 ---
 
