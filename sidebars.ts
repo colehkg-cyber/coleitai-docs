@@ -41,6 +41,7 @@ const sidebars: SidebarsConfig = {
         'guides/design-custom',
         'guides/technical-seo-apply',
         'guides/keyword-mining',
+        'guides/unsplash-setup',
         'guides/ai-writing',
         'guides/monetization',
       ],
