@@ -43,6 +43,7 @@ const sidebars: SidebarsConfig = {
         'guides/keyword-mining',
         'guides/unsplash-setup',
         'guides/ai-writing',
+        'guides/cron-automation',
         'guides/monetization',
       ],
     },
